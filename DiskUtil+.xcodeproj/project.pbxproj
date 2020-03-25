@@ -32,6 +32,8 @@
 		AAD4BECD242568DC00E420BF /* Outline DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BECC242568DC00E420BF /* Outline DataSource.swift */; };
 		AAD4BECF2425690900E420BF /* Outline Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BECE2425690900E420BF /* Outline Delegate.swift */; };
 		AAD9E43C242667B900888F61 /* DiskDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9E43B242667B900888F61 /* DiskDetails.swift */; };
+		AAED3CC8242BA7220011E254 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED3CC7242BA7220011E254 /* SpinnerViewController.swift */; };
+		AAED3CCA242BE2DC0011E254 /* DiskOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED3CC9242BE2DC0011E254 /* DiskOp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		AAD4BECC242568DC00E420BF /* Outline DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Outline DataSource.swift"; sourceTree = "<group>"; };
 		AAD4BECE2425690900E420BF /* Outline Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Outline Delegate.swift"; sourceTree = "<group>"; };
 		AAD9E43B242667B900888F61 /* DiskDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskDetails.swift; sourceTree = "<group>"; };
+		AAED3CC7242BA7220011E254 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		AAED3CC9242BE2DC0011E254 /* DiskOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskOp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				AA713A8924215AAE001B6A6E /* Refind.swift */,
 				AA9D49BF2423D424008D25C2 /* DiskSize.swift */,
 				AAA80ABF242954EC009CFAFF /* Details.swift */,
+				AAED3CC7242BA7220011E254 /* SpinnerViewController.swift */,
+				AAED3CC9242BE2DC0011E254 /* DiskOp.swift */,
 			);
 			path = "DiskUtil+";
 			sourceTree = "<group>";
@@ -221,9 +227,11 @@
 				AA82D2222420085F006ACF50 /* ViewController.swift in Sources */,
 				AAD9E43C242667B900888F61 /* DiskDetails.swift in Sources */,
 				AA9D49C02423D424008D25C2 /* DiskSize.swift in Sources */,
+				AAED3CC8242BA7220011E254 /* SpinnerViewController.swift in Sources */,
 				AAC675362427AAD500E905A4 /* VolumeInfo.swift in Sources */,
 				AAD4BECD242568DC00E420BF /* Outline DataSource.swift in Sources */,
 				AA713A8E24218524001B6A6E /* NSTextView.swift in Sources */,
+				AAED3CCA242BE2DC0011E254 /* DiskOp.swift in Sources */,
 				AAD4BEC52424FEB600E420BF /* getDiskArray.swift in Sources */,
 				AAA80AC0242954EC009CFAFF /* Details.swift in Sources */,
 				AA82D237242008D2006ACF50 /* NSMenu.swift in Sources */,

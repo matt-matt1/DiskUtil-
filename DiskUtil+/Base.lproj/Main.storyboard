@@ -60,61 +60,72 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                            <connections>
-                                                <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
-                                            <connections>
-                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open Recent" id="tXI-mr-wws">
+                                        <menuItem title="New Image" id="jws-UF-ZAh">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
+                                            <menu key="submenu" title="New Image" id="1fn-bz-Z5F">
                                                 <items>
-                                                    <menuItem title="Clear Menu" id="vNY-rz-j42">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="clearRecentDocuments:" target="Ady-hI-5gd" id="Daa-9d-B3U"/>
-                                                        </connections>
+                                                    <menuItem title="Blank Image…" keyEquivalent="n" id="cun-lR-SGg"/>
+                                                    <menuItem isSeparatorItem="YES" id="p1A-th-Vxn"/>
+                                                    <menuItem title="Image from Folder" keyEquivalent="N" id="YNz-sw-vN1"/>
+                                                    <menuItem title="Image from &quot;MyDisk&quot;" keyEquivalent="n" id="ZCI-UN-R9M">
+                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                                     </menuItem>
                                                 </items>
                                             </menu>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                                        <menuItem title="Open Disk Image" keyEquivalent="o" id="IAo-SY-fd9">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
                                                 <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
+                                        <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                                        <menuItem title="Get Info" keyEquivalent="i" id="pxx-59-PXV">
                                             <connections>
                                                 <action selector="saveDocument:" target="Ady-hI-5gd" id="teZ-XB-qJY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
+                                        <menuItem title="Show in Finder" id="Bw7-FT-i3A">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="saveDocumentAs:" target="Ady-hI-5gd" id="mDf-zr-I0C"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Revert to Saved" keyEquivalent="r" id="KaW-ft-85H">
+                                        <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
+                                        <menuItem title="Run First Aid…" id="KaW-ft-85H">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="revertDocumentToSaved:" target="Ady-hI-5gd" id="iJ3-Pv-kwq"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
-                                        <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
-                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                        <menuItem isSeparatorItem="YES" id="T8x-sj-Bp7"/>
+                                        <menuItem title="Rename" id="qIS-W8-SiK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="runPageLayout:" target="Ady-hI-5gd" id="Din-rz-gC5"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
+                                        <menuItem title="Unmount" id="aTl-1u-JFS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
                                             </connections>
+                                        </menuItem>
+                                        <menuItem title="Eject" keyEquivalent="e" id="2Xo-1Q-nKv"/>
+                                        <menuItem title="Enable Journaling" id="bAA-sM-hJc">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Change Password" id="1Ik-Ak-05W">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="xKp-Jy-Mea"/>
+                                        <menuItem title="RAID Assistant…" id="Soo-g5-5fk">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -123,6 +134,19 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="W48-6f-4Dl">
                                     <items>
+                                        <menuItem title="Restore…" keyEquivalent="R" id="Snb-Yw-SYL"/>
+                                        <menuItem title="Partition…" keyEquivalent="P" id="rDe-jf-ylm"/>
+                                        <menuItem title="Erase…" keyEquivalent="E" id="C1X-7N-kBl"/>
+                                        <menuItem title="Covert to APFS…" id="nTR-pt-FGN">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Add APFS Volume" id="CRK-O7-pYR">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Delete APFS Volume" id="fzz-d7-1bo">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="K6W-uH-Dip"/>
                                         <menuItem title="Undo" keyEquivalent="z" id="dRJ-4n-Yzg">
                                             <connections>
                                                 <action selector="undo:" target="Ady-hI-5gd" id="M6e-cu-g7V"/>
@@ -334,6 +358,13 @@
                                                     </menuItem>
                                                 </items>
                                             </menu>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="spp-1l-FxL"/>
+                                        <menuItem title="Start Dicttaion…" alternate="YES" id="Bxg-EN-4uQ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Emoji &amp; Symbols" keyEquivalent=" " id="ZIr-8V-svC">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -641,8 +672,7 @@
                                                 <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Disk Utility" keyEquivalent="d" id="R4o-n2-Eq4">
                                             <connections>
                                                 <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
                                             </connections>
@@ -679,7 +709,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="49" y="-402"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -688,8 +718,180 @@
                     <window key="window" title="Disk Util +" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="640" height="270"/>
+                        <rect key="contentRect" x="194" y="241" width="917" height="269"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="380CBA17-451F-49A4-9A72-26CC48A4017F" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Igv-9a-5kC">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Vxj-u1-8XC"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="RDH-Jt-NpE"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="l74-sb-Ry8"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="a38-hp-3m6"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="qBf-5N-99g"/>
+                                <toolbarItem implicitItemIdentifier="312DE746-441A-4CAA-8A29-FB56A0C4F7F6" label="Info" paletteLabel="Info" image="NSInfo" id="uBf-7U-Ufp">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="40" height="25"/>
+                                    <size key="maxSize" width="127" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="Ibk-wm-AsR">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSInfo" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HVk-9q-EcY">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="0BC03A66-9603-41D2-B2D3-99E105B74E5D" label="List" paletteLabel="List" image="NSListViewTemplate" id="oPn-EQ-kCN">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="35" height="25"/>
+                                    <size key="maxSize" width="127" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="2IX-c9-dAD">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSListViewTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ALd-l0-PHm">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="D3877F1C-B625-42E5-A46A-8C3B0A8C1FFA" label="Restore" paletteLabel="Restore" image="NSRefreshFreestandingTemplate" id="etV-Q1-wLX">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="35" height="25"/>
+                                    <size key="maxSize" width="127" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="5gf-Rh-ycj">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSRefreshFreestandingTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i6z-i2-r1z">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="257D028D-96DD-486E-B2B4-A9C37986028C" label="Mount" paletteLabel="Mount" image="NSStatusAvailable" id="qeV-ie-kNH">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="40" height="25"/>
+                                    <size key="maxSize" width="127" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="ul5-RL-DVp">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSStatusAvailable" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xxB-pO-7He">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="F0E9F2B5-2BE1-4749-B16B-30CB342AC758" label="Unmount" paletteLabel="Umnount" image="NSStatusUnavailable" id="QnQ-Gx-BUO">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="40" height="25"/>
+                                    <size key="maxSize" width="127" height="25"/>
+                                    <button key="view" verticalHuggingPriority="750" id="AAN-Tu-bzS">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSStatusUnavailable" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JcA-IW-Vd5">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="FA837BCD-B6F2-4BE1-862B-6EE0E0B6F950" label="Erase" paletteLabel="Erase" image="NSStopProgressFreestandingTemplate" id="qX8-oj-D43">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="21" height="21"/>
+                                    <size key="maxSize" width="40" height="21"/>
+                                    <button key="view" verticalHuggingPriority="750" id="MwQ-Pa-1vc">
+                                        <rect key="frame" x="8" y="14" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSStopProgressFreestandingTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gzt-dK-NxH">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="806F8255-92EF-4669-A689-9A3DFC78078C" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="lWm-F5-ZER">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="jkq-D0-kzk">
+                                        <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p2J-Wz-xWf">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="CEB8DB80-DBB0-46D7-98E3-8F495AA4EAF3" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="6R0-Bd-dzc">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="FBD-QN-XHL">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FF5-e7-Mvn">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="64493111-0336-4322-ACA2-29AFE182F480" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="Z52-gW-C3j">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="ATS-fT-G8b">
+                                        <rect key="frame" x="0.0" y="14" width="82" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundRect" title="Round Rect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mrH-Sd-Zlf">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="cellTitle"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="1EF87A95-F3D9-4571-B117-642FCFFD6681" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="hqW-kB-BQd">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="wEM-Wq-R6Q">
+                                        <rect key="frame" x="1" y="14" width="74" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="recessed" title="Recessed" bezelStyle="recessed" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VQq-q9-FY1">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                            <font key="font" metaFont="systemBold" size="12"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="3074E61D-19A5-45A2-A91B-D4426A7FB1AB" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="peP-a7-UUV">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="vR0-HT-GsO">
+                                        <rect key="frame" x="16" y="14" width="45" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="inline" title="Inline" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="igI-9g-URM">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="smallSystemBold"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="CAD980D7-F91A-498B-849D-A2731922EC3C" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="9aQ-wI-FjL">
+                                    <nil key="toolTip"/>
+                                    <button key="view" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="Eye-Jc-Tvl">
+                                        <rect key="frame" x="26" y="14" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="shi-T8-bhS">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="3FB6CA7C-8500-4993-91FE-EE7236621403" label="Custom View" paletteLabel="Custom View" sizingBehavior="auto" id="AbY-Tn-AZv">
+                                    <nil key="toolTip"/>
+                                    <button key="view" id="998-9N-JHv">
+                                        <rect key="frame" x="14" y="14" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="a9O-EM-qvz">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="RDH-Jt-NpE"/>
+                                <toolbarItem reference="a38-hp-3m6"/>
+                                <toolbarItem reference="uBf-7U-Ufp"/>
+                                <toolbarItem reference="QnQ-Gx-BUO"/>
+                                <toolbarItem reference="qeV-ie-kNH"/>
+                                <toolbarItem reference="qX8-oj-D43"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -700,7 +902,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="76.5" y="238.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -835,11 +1037,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="P6f-Eg-nF4"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="F3i-IY-SiT">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="F3i-IY-SiT">
                                     <rect key="frame" x="0.0" y="484" width="255" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="P2I-aQ-5Lq">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="P2I-aQ-5Lq">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -868,6 +1070,9 @@
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <action selector="renameVolume:" target="XfG-lQ-9wD" id="gI5-7G-QNP"/>
+                                            </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxZ-ah-GrK">
                                             <rect key="frame" x="109" y="401" width="58" height="20"/>
@@ -880,6 +1085,62 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YVn-Vq-sMV">
+                                            <rect key="frame" x="111" y="372" width="104" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="2OD-kj-xb0"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="CXn-Nx-4ZF"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Enable Journal" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="z17-mc-F0D">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="makeJounaledAction:" target="XfG-lQ-9wD" id="nF2-pA-yjp"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-QU-neC">
+                                            <rect key="frame" x="220" y="372" width="108" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="mqE-xm-L8Q"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="yWX-Nk-6kn"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Disable Journal" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cjs-Cj-Fnc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="makeJounaledAction:" target="XfG-lQ-9wD" id="g1q-BR-G30"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-AB-JMh">
+                                            <rect key="frame" x="333" y="372" width="148" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="nCx-IO-400"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="tJh-xE-0X2"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Move Journal External" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="arG-KJ-VTu">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="makeJounaledAction:" target="XfG-lQ-9wD" id="ZIU-DM-Bpk"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CGW-jn-XK9">
+                                            <rect key="frame" x="486" y="372" width="145" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="TeU-JF-M07"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wQb-LH-5NG"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Move Journal Internal" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BlG-BH-Y5B">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="makeJounaledAction:" target="XfG-lQ-9wD" id="B11-2a-S6r"/>
+                                            </connections>
+                                        </button>
                                         <box boxType="custom" borderType="line" cornerRadius="4" title="Capacity Outline" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-9o-ULv">
                                             <rect key="frame" x="526" y="420" width="120" height="40"/>
                                             <view key="contentView" id="vYD-rP-GBo">
@@ -906,18 +1167,18 @@
                                                 <constraint firstAttribute="height" constant="1" id="nkX-bT-9Tb"/>
                                             </constraints>
                                         </box>
-                                        <button identifier="MountBtn" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-k2-67r">
-                                            <rect key="frame" x="300" y="289" width="80" height="26"/>
+                                        <button identifier="MountBtn" verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LN-hc-7G4">
+                                            <rect key="frame" x="300" y="344" width="80" height="26"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="8QC-HJ-Xcp"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="WT7-fl-Bmc"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="G7V-ig-avH"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="zaB-sc-h0c"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="recessed" title="Mount" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDp-xz-GJk">
+                                            <buttonCell key="cell" type="recessed" title="Unmount" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mgd-a9-Fil">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                 <font key="font" metaFont="systemBold" size="12"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="mount:" target="XfG-lQ-9wD" id="J2Q-Px-dOl"/>
+                                                <action selector="unmount:" target="XfG-lQ-9wD" id="zeo-FQ-1Sc"/>
                                             </connections>
                                         </button>
                                         <box boxType="custom" borderType="line" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9be-di-WAM">
@@ -950,18 +1211,18 @@
                                             <color key="borderColor" name="secondarySelectedControlColor" catalog="System" colorSpace="catalog"/>
                                             <color key="fillColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </box>
-                                        <button identifier="MountBtn" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7LN-hc-7G4">
-                                            <rect key="frame" x="300" y="344" width="80" height="26"/>
+                                        <button identifier="MountBtn" verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-k2-67r">
+                                            <rect key="frame" x="300" y="289" width="80" height="26"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="G7V-ig-avH"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="zaB-sc-h0c"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="8QC-HJ-Xcp"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="WT7-fl-Bmc"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="recessed" title="Unmount" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mgd-a9-Fil">
+                                            <buttonCell key="cell" type="recessed" title="Mount" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDp-xz-GJk">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                                 <font key="font" metaFont="systemBold" size="12"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="unmount:" target="XfG-lQ-9wD" id="zeo-FQ-1Sc"/>
+                                                <action selector="mount:" target="XfG-lQ-9wD" id="J2Q-Px-dOl"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lRq-P3-yrU">
@@ -1236,24 +1497,117 @@
                                                 <action selector="openFinder:" target="XfG-lQ-9wD" id="Eh0-El-j0W"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7fs-FO-bZi">
+                                            <rect key="frame" x="518" y="52" width="128" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="3Fh-8n-eDS"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="QiC-eq-pqd"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Disable Ownership" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UU8-3P-e8m">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-SL-tga">
+                                            <rect key="frame" x="390" y="52" width="123" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="4eW-5c-KGj"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tm3-uV-HpA"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Enable Ownership" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t9g-cJ-6W4">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GvQ-cm-08Y">
+                                            <rect key="frame" x="35" y="19" width="98" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VI6-8T-o4p"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="mua-UU-lo8"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Verify Volume" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l8a-eI-Kj5">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Upi-E4-xp3">
+                                            <rect key="frame" x="329" y="19" width="83" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="tNq-cL-cKZ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wWE-Kd-61k"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Repair Disk" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EGc-Vw-fgw">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-Tm-Zsc">
+                                            <rect key="frame" x="223" y="19" width="101" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="YXk-3D-uw3"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ju2-wv-bDS"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Repair Volume" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AfR-ii-gS2">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-se-kyE">
+                                            <rect key="frame" x="138" y="19" width="80" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="4g8-p0-hBI"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="h0E-nK-rwj"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Verify Disk" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Pj-k1-HHB">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button identifier="MountBtn" verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SiC-P5-FMD">
+                                            <rect key="frame" x="385" y="345" width="92" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="KKp-fm-11w"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="cq7-y2-AN7"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="recessed" title="Reset Fusion" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CUW-BK-jjp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                                <font key="font" metaFont="systemBold" size="12"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="unmount:" target="XfG-lQ-9wD" id="Oje-Jb-1rj"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="rrF-N1-IPR" firstAttribute="top" secondItem="Mqm-qG-YoU" secondAttribute="top" id="0CQ-mk-qgD"/>
+                                        <constraint firstItem="uNa-QU-neC" firstAttribute="top" secondItem="NxZ-ah-GrK" secondAttribute="bottom" constant="3" id="0TM-xt-MoU"/>
                                         <constraint firstItem="7qT-8x-ti4" firstAttribute="trailing" secondItem="Mqm-qG-YoU" secondAttribute="trailing" id="0rd-eP-Gsd"/>
+                                        <constraint firstItem="7LN-hc-7G4" firstAttribute="centerX" secondItem="wAK-H5-26a" secondAttribute="centerX" id="1rS-7f-MpM"/>
+                                        <constraint firstItem="ClY-SL-tga" firstAttribute="top" secondItem="7qT-8x-ti4" secondAttribute="bottom" constant="10" id="4FI-L0-vxX"/>
+                                        <constraint firstAttribute="bottom" secondItem="GvQ-cm-08Y" secondAttribute="bottom" constant="20" id="5e3-la-G6a"/>
                                         <constraint firstItem="WR7-9o-ULv" firstAttribute="leading" secondItem="Mqm-qG-YoU" secondAttribute="leading" id="6po-Xb-6BX"/>
+                                        <constraint firstItem="CGW-jn-XK9" firstAttribute="leading" secondItem="6FO-AB-JMh" secondAttribute="trailing" constant="5" id="6zi-sn-aUe"/>
+                                        <constraint firstItem="7fs-FO-bZi" firstAttribute="leading" secondItem="ClY-SL-tga" secondAttribute="trailing" constant="5" id="72C-My-CPt"/>
+                                        <constraint firstItem="GvQ-cm-08Y" firstAttribute="leading" secondItem="7qT-8x-ti4" secondAttribute="leading" id="8u7-dv-K8O"/>
                                         <constraint firstAttribute="trailing" secondItem="WR7-9o-ULv" secondAttribute="trailing" constant="35" id="9UM-fk-3xT"/>
                                         <constraint firstItem="9be-di-WAM" firstAttribute="top" secondItem="8c9-nc-HeX" secondAttribute="bottom" constant="28" id="9bn-XV-wUj"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NxZ-ah-GrK" secondAttribute="trailing" constant="20" symbolic="YES" id="Cgm-gS-YAu"/>
+                                        <constraint firstItem="h8b-se-kyE" firstAttribute="leading" secondItem="GvQ-cm-08Y" secondAttribute="trailing" constant="5" id="F5O-kA-FDM"/>
                                         <constraint firstItem="E20-uG-KQc" firstAttribute="bottom" secondItem="3h5-IP-sBb" secondAttribute="top" id="FPq-xu-Kvg"/>
                                         <constraint firstItem="9be-di-WAM" firstAttribute="trailing" secondItem="Mqm-qG-YoU" secondAttribute="trailing" id="FzS-sx-hMb"/>
                                         <constraint firstItem="Plq-jl-Ql8" firstAttribute="top" secondItem="3h5-IP-sBb" secondAttribute="bottom" constant="20" id="GH1-Wa-sM9"/>
+                                        <constraint firstItem="CGW-jn-XK9" firstAttribute="top" secondItem="NxZ-ah-GrK" secondAttribute="bottom" constant="3" id="GY6-sv-UkW"/>
+                                        <constraint firstItem="dx6-Tm-Zsc" firstAttribute="leading" secondItem="h8b-se-kyE" secondAttribute="trailing" constant="5" id="H0r-2z-s06"/>
+                                        <constraint firstItem="uNa-QU-neC" firstAttribute="leading" secondItem="YVn-Vq-sMV" secondAttribute="trailing" constant="5" id="HxC-B0-Suw"/>
                                         <constraint firstAttribute="bottom" secondItem="3h5-IP-sBb" secondAttribute="top" constant="268" id="JGK-YQ-gLT"/>
                                         <constraint firstItem="9be-di-WAM" firstAttribute="leading" secondItem="7qT-8x-ti4" secondAttribute="leading" id="KCi-5U-fd3"/>
                                         <constraint firstItem="euE-gk-beB" firstAttribute="leading" secondItem="wAK-H5-26a" secondAttribute="leading" constant="25" id="KNm-Ap-S0n"/>
+                                        <constraint firstItem="Upi-E4-xp3" firstAttribute="bottom" secondItem="wAK-H5-26a" secondAttribute="bottom" constant="-20" id="KTJ-pP-8cu"/>
                                         <constraint firstItem="Mqm-qG-YoU" firstAttribute="centerY" secondItem="WR7-9o-ULv" secondAttribute="centerY" id="NFy-26-3Ta"/>
                                         <constraint firstItem="7qT-8x-ti4" firstAttribute="top" secondItem="3h5-IP-sBb" secondAttribute="top" constant="60" id="NlU-F7-YnE"/>
                                         <constraint firstItem="lRq-P3-yrU" firstAttribute="leading" secondItem="9be-di-WAM" secondAttribute="leading" constant="10" id="OZB-RG-e52"/>
                                         <constraint firstItem="E20-uG-KQc" firstAttribute="leading" secondItem="8c9-nc-HeX" secondAttribute="leading" id="Pzl-cH-JgC"/>
+                                        <constraint firstItem="YVn-Vq-sMV" firstAttribute="top" secondItem="NxZ-ah-GrK" secondAttribute="bottom" constant="3" id="Q0S-aN-kdr"/>
                                         <constraint firstItem="rrF-N1-IPR" firstAttribute="leading" secondItem="wAK-H5-26a" secondAttribute="leading" constant="111" id="QE6-UZ-n8v"/>
                                         <constraint firstItem="E20-uG-KQc" firstAttribute="trailing" secondItem="Mqm-qG-YoU" secondAttribute="trailing" id="SO6-AH-r4o"/>
                                         <constraint firstItem="7LN-hc-7G4" firstAttribute="top" secondItem="8c9-nc-HeX" secondAttribute="bottom" constant="1" id="SYG-GO-3Gj"/>
@@ -1262,18 +1616,27 @@
                                         <constraint firstItem="8c9-nc-HeX" firstAttribute="top" secondItem="NxZ-ah-GrK" secondAttribute="bottom" constant="29" id="Xpp-8D-gEV"/>
                                         <constraint firstItem="Mqm-qG-YoU" firstAttribute="trailing" secondItem="8c9-nc-HeX" secondAttribute="trailing" id="YoD-bs-mLZ"/>
                                         <constraint firstItem="WR7-9o-ULv" firstAttribute="trailing" secondItem="Mqm-qG-YoU" secondAttribute="trailing" id="anj-Go-aPf"/>
+                                        <constraint firstItem="SiC-P5-FMD" firstAttribute="leading" secondItem="7LN-hc-7G4" secondAttribute="trailing" constant="5" id="b8b-cQ-82K"/>
+                                        <constraint firstItem="7fs-FO-bZi" firstAttribute="top" secondItem="7qT-8x-ti4" secondAttribute="bottom" constant="10" id="byD-VL-uA0"/>
+                                        <constraint firstItem="6FO-AB-JMh" firstAttribute="top" secondItem="NxZ-ah-GrK" secondAttribute="bottom" constant="3" id="e0f-01-c7l"/>
                                         <constraint firstItem="euE-gk-beB" firstAttribute="centerY" secondItem="Mqm-qG-YoU" secondAttribute="centerY" id="ePB-yH-afX"/>
+                                        <constraint firstAttribute="bottom" secondItem="h8b-se-kyE" secondAttribute="bottom" constant="20" id="ffC-ga-ECh"/>
                                         <constraint firstItem="8c9-nc-HeX" firstAttribute="leading" secondItem="7qT-8x-ti4" secondAttribute="leading" id="gs2-TB-BLn"/>
                                         <constraint firstItem="7Ub-k2-67r" firstAttribute="top" secondItem="9be-di-WAM" secondAttribute="bottom" constant="3" id="hfT-vE-I0r"/>
                                         <constraint firstItem="8c9-nc-HeX" firstAttribute="leading" secondItem="wAK-H5-26a" secondAttribute="leading" constant="35" id="hn5-87-0hU"/>
                                         <constraint firstItem="NxZ-ah-GrK" firstAttribute="top" secondItem="rrF-N1-IPR" secondAttribute="bottom" constant="2" id="iAC-W3-jjq"/>
                                         <constraint firstItem="WR7-9o-ULv" firstAttribute="top" secondItem="wAK-H5-26a" secondAttribute="top" constant="30" id="j2l-xF-BJe"/>
                                         <constraint firstItem="lRq-P3-yrU" firstAttribute="centerY" secondItem="9be-di-WAM" secondAttribute="centerY" id="lWF-Dl-K8o"/>
-                                        <constraint firstItem="7LN-hc-7G4" firstAttribute="centerX" secondItem="wAK-H5-26a" secondAttribute="centerX" id="q3V-ph-TH7"/>
+                                        <constraint firstItem="9be-di-WAM" firstAttribute="top" secondItem="SiC-P5-FMD" secondAttribute="bottom" constant="3" id="nyn-Jg-bgo"/>
                                         <constraint firstItem="3h5-IP-sBb" firstAttribute="leading" secondItem="8c9-nc-HeX" secondAttribute="leading" id="qfI-dp-4hE"/>
                                         <constraint firstItem="rrF-N1-IPR" firstAttribute="leading" secondItem="NxZ-ah-GrK" secondAttribute="leading" id="qhb-vz-h5v"/>
+                                        <constraint firstAttribute="bottom" secondItem="dx6-Tm-Zsc" secondAttribute="bottom" constant="20" id="qvh-dm-XOF"/>
+                                        <constraint firstItem="7fs-FO-bZi" firstAttribute="trailing" secondItem="7qT-8x-ti4" secondAttribute="trailing" id="rix-gC-uwq"/>
                                         <constraint firstItem="7Ub-k2-67r" firstAttribute="centerX" secondItem="wAK-H5-26a" secondAttribute="centerX" id="uLW-Wr-qA7"/>
+                                        <constraint firstItem="Upi-E4-xp3" firstAttribute="leading" secondItem="dx6-Tm-Zsc" secondAttribute="trailing" constant="5" id="ume-pI-Fzd"/>
                                         <constraint firstItem="Plq-jl-Ql8" firstAttribute="centerX" secondItem="wAK-H5-26a" secondAttribute="centerX" id="wKP-qd-kfy"/>
+                                        <constraint firstItem="6FO-AB-JMh" firstAttribute="leading" secondItem="uNa-QU-neC" secondAttribute="trailing" constant="5" id="wfA-nC-9mY"/>
+                                        <constraint firstItem="YVn-Vq-sMV" firstAttribute="leading" secondItem="NxZ-ah-GrK" secondAttribute="leading" id="xPt-I3-yHT"/>
                                         <constraint firstItem="E20-uG-KQc" firstAttribute="top" secondItem="9be-di-WAM" secondAttribute="bottom" id="zg0-4j-YuZ"/>
                                         <constraint firstItem="Mqm-qG-YoU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rrF-N1-IPR" secondAttribute="trailing" constant="8" symbolic="YES" id="ztV-Ia-hPh"/>
                                     </constraints>
@@ -1299,6 +1662,7 @@
                         <outlet property="detailsImage" destination="euE-gk-beB" id="OQQ-O4-LQk"/>
                         <outlet property="detailsTable1" destination="v0w-jn-DM1" id="z1F-fw-Ws3"/>
                         <outlet property="detailsTable2" destination="lCk-fL-kyq" id="kA6-Na-Oy4"/>
+                        <outlet property="journalBtn" destination="YVn-Vq-sMV" id="TZD-gG-F6X"/>
                         <outlet property="moreInfo" destination="NxZ-ah-GrK" id="CUa-Vf-bl7"/>
                         <outlet property="mountBtn" destination="7Ub-k2-67r" id="4uS-hu-Ekn"/>
                         <outlet property="nameField" destination="rrF-N1-IPR" id="cDk-HL-nAx"/>
@@ -1312,13 +1676,34 @@
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <toolbar implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="MVc-Cz-6Z3">
+                    <allowedToolbarItems>
+                        <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="tQl-w9-2WU"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="agI-Hl-byZ"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="IAm-dk-hPz"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fMk-Cy-uuk"/>
+                        <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="614-bj-kcC"/>
+                    </allowedToolbarItems>
+                    <defaultToolbarItems>
+                        <toolbarItem reference="tQl-w9-2WU"/>
+                        <toolbarItem reference="agI-Hl-byZ"/>
+                        <toolbarItem reference="614-bj-kcC"/>
+                        <toolbarItem reference="IAm-dk-hPz"/>
+                    </defaultToolbarItems>
+                </toolbar>
             </objects>
-            <point key="canvasLocation" x="75" y="750"/>
+            <point key="canvasLocation" x="76" y="753"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
         <image name="NSFolder" width="32" height="32"/>
+        <image name="NSInfo" width="32" height="32"/>
+        <image name="NSListViewTemplate" width="14" height="10"/>
+        <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
+        <image name="NSStatusAvailable" width="16" height="16"/>
+        <image name="NSStatusUnavailable" width="16" height="16"/>
+        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
         <image name="eject" width="8" height="9"/>
         <image name="otherMedia" width="54" height="59"/>
     </resources>

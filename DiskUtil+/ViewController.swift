@@ -85,6 +85,7 @@ class ViewController: NSViewController {
 	}()*/
 	/**/
 	
+	@IBOutlet weak var journalBtn: NSButton!
 	@IBOutlet weak var mountBtn: NSButton!
 	@IBOutlet weak var unmountBtn: NSButton!
 	@IBOutlet weak var openBtn: NSButton!

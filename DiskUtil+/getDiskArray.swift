@@ -13,7 +13,7 @@ extension ViewController {
 	
 	func getDiskArray() -> [String : AnyObject] {
 		var format = PropertyListSerialization.PropertyListFormat.xml
-		let output = "diskutil list -plist".run()
+		let output = "/usr/sbin/diskutil list -plist".run()
 		let outData = output?.data(using: String.Encoding.utf8)
 		var diskDict: [String : AnyObject] = [:]
 		do {

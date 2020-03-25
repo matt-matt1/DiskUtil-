@@ -84,6 +84,10 @@ class VolumeInfo/*: Codable*/ {
 		self.DAMediaPath = DAMediaPath //: String	//: IODeviceTree:/PCI0@0/SATA@1F,2/PRT0@0/PMP@0/@0:2,
 		self.DAVolumeMountable = DAVolumeMountable //: Bool	//: 1
 	}
+	
+	func appearenceTimeAsDate(_ double: Double) -> Date {
+		return Date(timeIntervalSinceReferenceDate: double)
+	}
 
 }
 

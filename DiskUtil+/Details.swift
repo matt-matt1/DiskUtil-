@@ -13,6 +13,8 @@ extension ViewController {
 	
 	func detailsDisk(_ table: NSOutlineView) {
 		if let volume = myDisks?.AllDisksAndPartitions[max(0, table.clickedColumn)] {
+			nameField.setAccessibilityIdentifier(volume.details.deviceIdentifier)
+			journalBtn.isHidden = true
 			switch (volume.details.busProtocol) {
 			case "SATA":
 				detailsImage.image = NSImage(named: "sata")
@@ -36,7 +38,7 @@ extension ViewController {
 			moreInfo.stringValue = "\(type) • \(info)"
 			capacityLabel.stringValue = formatter.string(fromByteCount: volume.Size)//self.humanReadableByteCount(volume.Size)
 //			if volume.MountPoint != nil {
-				detailsMountedDisk(volume, table/*, type*/)
+				detailsMountedDisk(volume, table)
 //			} else {
 //				detailsUnmountedDisk(volume)
 //			}
@@ -45,7 +47,9 @@ extension ViewController {
 	
 	func detailsUnmountedDisk(_ volume: DADiskPart) {
 		mountBtn.isHidden = false
+		mountBtn.setAccessibilityIdentifier(volume.details.deviceIdentifier)
 		openBtn.isHidden = true
+		unmountBtn.isHidden = true
 		let bar = NSView()
 		bar.wantsLayer = true
 		bar.layer?.backgroundColor = NSColor.lightGray.cgColor
@@ -62,16 +66,17 @@ extension ViewController {
 			sub.removeFromSuperview()
 		}
 		usageNote.stringValue = "Not Mounted"
-		//		usageBarWidthConstraint.constant = usageBox.frame.width
 		
-		self.detailsTable1Vals = ["Not Mounted", formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, "Not Available", "Not Known"]
+		self.detailsTable1Vals = [/* Location: */"Not Mounted", /* Connection: */formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, /* Partition Map: */"Not Available", /* SMART Status: */"Not Known"]
 		self.detailsTable1.reloadData()
-		self.detailsTable2Vals = ["\(volume.details.isInternal ? "Internal" : "External")", "Disabled", "\(volume.details.busProtocol)", "\(volume.details.deviceNode)"]
+		self.detailsTable2Vals = [/* Capacity: */"\(volume.details.isInternal ? "Internal" : "External")", /* Child Count: */"Disabled", /* Type: */"\(volume.details.busProtocol)", /* Device: */"\(volume.details.deviceNode)"]
 		self.detailsTable2.reloadData()
 	}
 
-	func detailsMountedDisk(_ volume: DADiskPart, _ table: NSOutlineView/*, _ type: String*/) {
+	func detailsMountedDisk(_ volume: DADiskPart, _ table: NSOutlineView) {
 		mountBtn.isHidden = true
+		unmountBtn.isHidden = false
+		unmountBtn.setAccessibilityIdentifier(volume.details.deviceIdentifier)
 		openBtn.isHidden = true
 		usageLegend.arrangedSubviews.forEach { (sub) in
 			sub.removeFromSuperview()
@@ -89,8 +94,6 @@ extension ViewController {
 			let used = myPart.Size
 			let ratio: Float64 = Float64(used) / Float64(myDisk.Size)
 			let mySize: CGFloat = max(CGFloat(ratio) * usageBox.frame.width, 5)/*CGFloat(ratio * 595)*/
-			//				self.usageBarWidthConstraint.constant = mySize
-			//				self.usageBar.updateConstraints()
 			//				DispatchQueue.main.async {
 			self.usageLegend.addArrangedSubview(self.legendKey(color: colors[i], title: myPart.VolumeName, message: self.formatter.string(fromByteCount: myPart.Size)))
 			let bar = NSView()
@@ -110,16 +113,14 @@ extension ViewController {
 		}
 		mountBtn.isHidden = true
 		self.detailsTable1Data = ["Location:", "Connection:", "Partition Map:", "SMART Status:"]
-		self.detailsTable1Vals = ["\(volume.details.isInternal ? "Internal" : "External")", "\(volume.details.busProtocol)", "\(volume.details.partitionMapPartition)", "\(volume.details.smartStatus)"]
-		//\(volume.details.mountPoint)
+		self.detailsTable1Vals = [/* Location: */"\(volume.details.isInternal ? "Internal" : "External")", /* Connection: */"\(volume.details.busProtocol)", /* Partition Map: */"\(volume.details.partitionMapPartition)", /* SMART Status: */"\(volume.details.smartStatus)"]
 		self.detailsTable1.reloadData()
 		self.detailsTable2Data = ["Capacity", "Child Count:", "Type", "Device"]
-		self.detailsTable2Vals = [formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, "\(volume.Partitions.count)", "Disk", "\(volume.details.deviceNode)"]
+		self.detailsTable2Vals = [/* Capacity: */formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, /* Child Count: */"\(volume.Partitions.count)", /* Type: */"Disk", /* Device: */"\(volume.details.deviceNode)"]
 		self.detailsTable2.reloadData()
 	}
 
 	func detailsUnmountedPartition(_ volume: DAPartition) {
-//		usageBar.fillColor = NSColor.gridColor
 //		DispatchQueue.main.async {
 //			self.usageBox.subviews.forEach { (sub) in
 //				sub.removeFromSuperview()
@@ -127,6 +128,7 @@ extension ViewController {
 //		}
 		mountBtn.isHidden = false
 		mountBtn.setAccessibilityIdentifier(volume.details.deviceIdentifier)
+		unmountBtn.isHidden = true
 		openBtn.isHidden = true
 		let bar = NSView()
 		bar.wantsLayer = true
@@ -144,11 +146,10 @@ extension ViewController {
 			sub.removeFromSuperview()
 		}
 		usageNote.stringValue = "Not Mounted"
-//		usageBarWidthConstraint.constant = usageBox.frame.width
 
-		self.detailsTable1Vals = ["Not Mounted", formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, "Not Available", "Not Known"]
+		self.detailsTable1Vals = [/* Mount Point: */"Not Mounted", /* Capacity: */formatter.string(fromByteCount: volume.Size)/*self.humanReadableByteCount(volume.Size)*/, /* Available: */"Not Available", /* Used: */"Not Known"]
 		self.detailsTable1.reloadData()
-		self.detailsTable2Vals = ["\(volume.details.isInternal ? "Internal" : "External")", "Disabled", "\(volume.details.busProtocol)", "\(volume.details.deviceNode)"]
+		self.detailsTable2Vals = [/* Type: */"\(volume.details.isInternal ? "Internal" : "External")", /* Owners: */"Disabled", /* Connection: */"\(volume.details.busProtocol)", /* Device: */"\(volume.details.deviceNode)"]
 		self.detailsTable2.reloadData()
 	}
 	
@@ -208,15 +209,13 @@ extension ViewController {
 	
 	func detailsMountedPartition(_ volume: DAPartition, _ table: NSOutlineView, _ type: String) {
 		usageNote.stringValue = ""
-//		usageBar.fillColor = NSColor.systemBlue
 		mountBtn.isHidden = true
 		openBtn.isHidden = false
 		openBtn.setAccessibilityIdentifier(volume.details.mountPoint)
-//		openBtn..tag = volume.DeviceIdentifier
+		unmountBtn.isHidden = false
+		unmountBtn.setAccessibilityIdentifier(volume.details.mountPoint)
 		let used = volume.details.size - volume.details.freeSpace
 		let ratio: Float64 = Float64(used) / Float64(volume.Size)
-//		usageBarWidthConstraint.constant = CGFloat(ratio) * usageBox.frame.width//CGFloat(ratio * 595)
-//		usageBar.updateConstraints()
 //		DispatchQueue.main.async {
 //			self.usageBox.subviews.forEach { (sub) in
 //				sub.removeFromSuperview()
@@ -251,9 +250,9 @@ extension ViewController {
 		usageLegend.addArrangedSubview(legendKey(color: NSColor.systemBlue, title: "Used", message: formatter.string(fromByteCount: used)))
 		usageLegend.addArrangedSubview(legendKey(color: NSColor.white, title: "Free", message: formatter.string(fromByteCount: volume.details.freeSpace)))
 
-		self.detailsTable1Vals = ["\(volume.details.mountPoint)", self.formatter.string(fromByteCount: volume.details.size), self.formatter.string(fromByteCount: volume.details.freeSpace), self.formatter.string(fromByteCount: used), ]
+		self.detailsTable1Vals = [/*Mount Point:*/"\(volume.details.mountPoint)", /*Capacity:*/self.formatter.string(fromByteCount: volume.details.size), /*Available:*/self.formatter.string(fromByteCount: volume.details.freeSpace), /*Used:*/self.formatter.string(fromByteCount: used)]
 		self.detailsTable1.reloadData()
-		self.detailsTable2Vals = ["\(type)", "\(volume.details.globalPermissionsEnabled ? "Enabled" : "Disabled")", "\(volume.details.busProtocol)", "\(volume.details.deviceNode)"]
+		self.detailsTable2Vals = [/*Type*/"\(type)", /*Owners:*/"\(volume.details.globalPermissionsEnabled ? "Enabled" : "Disabled")", /*Connection*/"\(volume.details.busProtocol)", /*Device:*/"\(volume.details.deviceNode)"]
 		self.detailsTable2.reloadData()
 	}
 	
@@ -296,6 +295,8 @@ extension ViewController {
 	
 	func detailsPartition(_ table: NSOutlineView) {
 		if let volume = myDisks?.AllDisksAndPartitions[max(0, table.clickedColumn)].Partitions[table.clickedRow-1] {
+			nameField.setAccessibilityIdentifier(volume.details.deviceIdentifier)
+			journalBtn.isHidden = (volume.Content != "Apple_HFS")
 			switch (volume.details.busProtocol) {
 			case "SATA":
 				detailsImage.image = NSImage(named: "sata")
