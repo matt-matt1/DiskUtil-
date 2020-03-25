@@ -7,20 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA713A8A24215AAE001B6A6E /* Refind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA713A8924215AAE001B6A6E /* Refind.swift */; };
+		AA713A8E24218524001B6A6E /* NSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA713A8D24218524001B6A6E /* NSTextView.swift */; };
 		AA82D2202420085F006ACF50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D21F2420085F006ACF50 /* AppDelegate.swift */; };
 		AA82D2222420085F006ACF50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D2212420085F006ACF50 /* ViewController.swift */; };
 		AA82D22424200865006ACF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA82D22324200865006ACF50 /* Assets.xcassets */; };
 		AA82D22724200865006ACF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA82D22524200865006ACF50 /* Main.storyboard */; };
+		AA82D23024200886006ACF50 /* Disks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D22F24200886006ACF50 /* Disks.swift */; };
+		AA82D236242008D2006ACF50 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D234242008D2006ACF50 /* String.swift */; };
+		AA82D237242008D2006ACF50 /* NSMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D235242008D2006ACF50 /* NSMenu.swift */; };
+		AA82D23A242008EB006ACF50 /* MountEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D239242008EB006ACF50 /* MountEntry.swift */; };
+		AA82D23E24200942006ACF50 /* Mount DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D23B24200942006ACF50 /* Mount DataSource.swift */; };
+		AA82D23F24200942006ACF50 /* Mount TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D23C24200942006ACF50 /* Mount TableView.swift */; };
+		AA82D24024200942006ACF50 /* Mount Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D23D24200942006ACF50 /* Mount Delegate.swift */; };
+		AA82D2422420387B006ACF50 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82D2412420387B006ACF50 /* Actions.swift */; };
+		AA9D49C02423D424008D25C2 /* DiskSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9D49BF2423D424008D25C2 /* DiskSize.swift */; };
+		AAA80AB824290265009CFAFF /* CustomTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA80AB724290265009CFAFF /* CustomTextFieldCell.swift */; };
+		AAA80AC0242954EC009CFAFF /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA80ABF242954EC009CFAFF /* Details.swift */; };
+		AAC675362427AAD500E905A4 /* VolumeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC675342427AAD500E905A4 /* VolumeInfo.swift */; };
+		AAC675392427DBAA00E905A4 /* DiskPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC675382427DBAA00E905A4 /* DiskPart.swift */; };
+		AAC6753B2427DBF100E905A4 /* DAPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC6753A2427DBF100E905A4 /* DAPartition.swift */; };
+		AAD4BEC52424FEB600E420BF /* getDiskArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BEC42424FEB600E420BF /* getDiskArray.swift */; };
+		AAD4BEC724252D7100E420BF /* DiskArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BEC624252D7100E420BF /* DiskArray.swift */; };
+		AAD4BECD242568DC00E420BF /* Outline DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BECC242568DC00E420BF /* Outline DataSource.swift */; };
+		AAD4BECF2425690900E420BF /* Outline Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4BECE2425690900E420BF /* Outline Delegate.swift */; };
+		AAD9E43C242667B900888F61 /* DiskDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9E43B242667B900888F61 /* DiskDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA713A8624210DE3001B6A6E /* DiskUtil+.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DiskUtil+.entitlements"; sourceTree = "<group>"; };
+		AA713A8924215AAE001B6A6E /* Refind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refind.swift; sourceTree = "<group>"; };
+		AA713A8D24218524001B6A6E /* NSTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextView.swift; sourceTree = "<group>"; };
 		AA82D21C2420085F006ACF50 /* DiskUtil+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DiskUtil+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA82D21F2420085F006ACF50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA82D2212420085F006ACF50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA82D22324200865006ACF50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA82D22624200865006ACF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA82D22824200865006ACF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA82D22924200865006ACF50 /* DiskUtil_.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiskUtil_.entitlements; sourceTree = "<group>"; };
+		AA82D22F24200886006ACF50 /* Disks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disks.swift; sourceTree = "<group>"; };
+		AA82D234242008D2006ACF50 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AA82D235242008D2006ACF50 /* NSMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenu.swift; sourceTree = "<group>"; };
+		AA82D239242008EB006ACF50 /* MountEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountEntry.swift; sourceTree = "<group>"; };
+		AA82D23B24200942006ACF50 /* Mount DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mount DataSource.swift"; sourceTree = "<group>"; };
+		AA82D23C24200942006ACF50 /* Mount TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mount TableView.swift"; sourceTree = "<group>"; };
+		AA82D23D24200942006ACF50 /* Mount Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mount Delegate.swift"; sourceTree = "<group>"; };
+		AA82D2412420387B006ACF50 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		AA9D49BF2423D424008D25C2 /* DiskSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskSize.swift; sourceTree = "<group>"; };
+		AAA80AB724290265009CFAFF /* CustomTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldCell.swift; sourceTree = "<group>"; };
+		AAA80ABF242954EC009CFAFF /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		AAC675342427AAD500E905A4 /* VolumeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeInfo.swift; sourceTree = "<group>"; };
+		AAC675382427DBAA00E905A4 /* DiskPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskPart.swift; sourceTree = "<group>"; };
+		AAC6753A2427DBF100E905A4 /* DAPartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPartition.swift; sourceTree = "<group>"; };
+		AAD4BEC42424FEB600E420BF /* getDiskArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDiskArray.swift; sourceTree = "<group>"; };
+		AAD4BEC624252D7100E420BF /* DiskArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskArray.swift; sourceTree = "<group>"; };
+		AAD4BECC242568DC00E420BF /* Outline DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Outline DataSource.swift"; sourceTree = "<group>"; };
+		AAD4BECE2425690900E420BF /* Outline Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Outline Delegate.swift"; sourceTree = "<group>"; };
+		AAD9E43B242667B900888F61 /* DiskDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +95,51 @@
 		AA82D21E2420085F006ACF50 /* DiskUtil+ */ = {
 			isa = PBXGroup;
 			children = (
+				AA713A8624210DE3001B6A6E /* DiskUtil+.entitlements */,
+				AAD4BECC242568DC00E420BF /* Outline DataSource.swift */,
+				AAD4BECE2425690900E420BF /* Outline Delegate.swift */,
+				AA82D238242008DC006ACF50 /* Model */,
+				AA82D233242008AF006ACF50 /* Extension */,
 				AA82D21F2420085F006ACF50 /* AppDelegate.swift */,
+				AAD4BEC42424FEB600E420BF /* getDiskArray.swift */,
 				AA82D2212420085F006ACF50 /* ViewController.swift */,
+				AA82D23B24200942006ACF50 /* Mount DataSource.swift */,
+				AA82D23D24200942006ACF50 /* Mount Delegate.swift */,
+				AA82D23C24200942006ACF50 /* Mount TableView.swift */,
 				AA82D22324200865006ACF50 /* Assets.xcassets */,
 				AA82D22524200865006ACF50 /* Main.storyboard */,
+				AAA80AB724290265009CFAFF /* CustomTextFieldCell.swift */,
+				AA82D2412420387B006ACF50 /* Actions.swift */,
 				AA82D22824200865006ACF50 /* Info.plist */,
-				AA82D22924200865006ACF50 /* DiskUtil_.entitlements */,
+				AA82D22F24200886006ACF50 /* Disks.swift */,
+				AA713A8924215AAE001B6A6E /* Refind.swift */,
+				AA9D49BF2423D424008D25C2 /* DiskSize.swift */,
+				AAA80ABF242954EC009CFAFF /* Details.swift */,
 			);
 			path = "DiskUtil+";
+			sourceTree = "<group>";
+		};
+		AA82D233242008AF006ACF50 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA82D235242008D2006ACF50 /* NSMenu.swift */,
+				AA82D234242008D2006ACF50 /* String.swift */,
+				AA713A8D24218524001B6A6E /* NSTextView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AA82D238242008DC006ACF50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA82D239242008EB006ACF50 /* MountEntry.swift */,
+				AAD4BEC624252D7100E420BF /* DiskArray.swift */,
+				AAD9E43B242667B900888F61 /* DiskDetails.swift */,
+				AAC675342427AAD500E905A4 /* VolumeInfo.swift */,
+				AAC675382427DBAA00E905A4 /* DiskPart.swift */,
+				AAC6753A2427DBF100E905A4 /* DAPartition.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +174,11 @@
 				TargetAttributes = {
 					AA82D21B2420085F006ACF50 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -133,8 +217,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA80AB824290265009CFAFF /* CustomTextFieldCell.swift in Sources */,
 				AA82D2222420085F006ACF50 /* ViewController.swift in Sources */,
+				AAD9E43C242667B900888F61 /* DiskDetails.swift in Sources */,
+				AA9D49C02423D424008D25C2 /* DiskSize.swift in Sources */,
+				AAC675362427AAD500E905A4 /* VolumeInfo.swift in Sources */,
+				AAD4BECD242568DC00E420BF /* Outline DataSource.swift in Sources */,
+				AA713A8E24218524001B6A6E /* NSTextView.swift in Sources */,
+				AAD4BEC52424FEB600E420BF /* getDiskArray.swift in Sources */,
+				AAA80AC0242954EC009CFAFF /* Details.swift in Sources */,
+				AA82D237242008D2006ACF50 /* NSMenu.swift in Sources */,
+				AAC675392427DBAA00E905A4 /* DiskPart.swift in Sources */,
+				AA82D23E24200942006ACF50 /* Mount DataSource.swift in Sources */,
+				AA713A8A24215AAE001B6A6E /* Refind.swift in Sources */,
+				AAC6753B2427DBF100E905A4 /* DAPartition.swift in Sources */,
 				AA82D2202420085F006ACF50 /* AppDelegate.swift in Sources */,
+				AA82D236242008D2006ACF50 /* String.swift in Sources */,
+				AA82D2422420387B006ACF50 /* Actions.swift in Sources */,
+				AA82D23A242008EB006ACF50 /* MountEntry.swift in Sources */,
+				AAD4BEC724252D7100E420BF /* DiskArray.swift in Sources */,
+				AAD4BECF2425690900E420BF /* Outline Delegate.swift in Sources */,
+				AA82D23F24200942006ACF50 /* Mount TableView.swift in Sources */,
+				AA82D24024200942006ACF50 /* Mount Delegate.swift in Sources */,
+				AA82D23024200886006ACF50 /* Disks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +376,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "DiskUtil+/DiskUtil_.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AA7972LFAF;
@@ -290,7 +394,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "DiskUtil+/DiskUtil_.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AA7972LFAF;
